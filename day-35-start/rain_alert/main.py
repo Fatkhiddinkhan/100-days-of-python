@@ -24,8 +24,7 @@ def is_rain(data):
                 to="+82 10 4643 2003",
             )
             return message.status
-        else:
-            return "it is not rainy"
+    return "it is not rainy"
 response = requests.get(url="https://api.openweathermap.org/data/2.5/forecast", params=parameters)
 response.raise_for_status()
 data = response.json()["list"]
