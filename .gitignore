@@ -1,0 +1,6 @@
+# PyCharm specific files
+.idea/
+__pycache__/
+
+# Environment files
+*.env
