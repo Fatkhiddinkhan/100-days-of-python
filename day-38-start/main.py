@@ -10,6 +10,7 @@ SHEETY_TOKEN = os.environ.get("SHEETY_TOKEN")
 ### date
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
+atempts = 3
 while True:
     exercise = input("Tell me which exercise you did: ")
     nutritionix_headers = {
@@ -29,7 +30,11 @@ while True:
     nutritionix_response = requests.post(url=URL, headers=nutritionix_headers, json=nutritionix_data)
     data = nutritionix_response.json()["exercises"]
     if len(data) == 0:
+        atempts -= 1
         print(f"Couldn't find data relate to {exercise}\nPlease try again")
+        if atempts == 0:
+            print("You left no more attempts")
+            break
     else:
         break
 for single_data in data:
