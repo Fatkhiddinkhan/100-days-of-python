@@ -1,0 +1,20 @@
+.color-title[id="red"]{
+    color: red;
+}
+.color-title[id="blue"]{
+    color: blue;
+}
+.color-title[id="orange"]{
+    color: orange;
+}
+.color-title[id="green"]{
+    color: green;
+}
+.color-title[id="yellow"]{
+    color: yellow;
+}
+
+img{
+    height: 200;
+    width: 200;
+}
