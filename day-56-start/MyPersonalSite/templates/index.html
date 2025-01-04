@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numonov Fatkhiddin Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Inline Styles for Quick Update -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f4f4f9;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background: url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn {
+            padding: 0.8rem 2rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .portfolio h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .project {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f9f9f9;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+        }
+
+        .form-group {
+            margin: 1rem 0;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 80%;
+            max-width: 600px;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 0.8rem 2rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .footer .social-icons {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .footer .social-icons li {
+            display: inline;
+            margin: 0 0.5rem;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Numonov Fatkhiddin</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero" id="about">
+            <div class="hero-content">
+                <h1>Hi, I'm Numonov Fatkhiddin</h1>
+                <p>In the Journey to Become an AI/ML Engineer</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </header>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?ai,chatbot" alt="Project 1">
+                    <h3>AI Chatbot</h3>
+                    <p>An AI-powered chatbot developed using Python and Flask.</p>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?data,visualization" alt="Project 2">
+                    <h3>Data Visualization</h3>
+                    <p>Interactive dashboard for data visualization.</p>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?machine,learning" alt="Project 3">
+                    <h3>ML Stock Prediction</h3>
+                    <p>Predicting stock prices with machine learning models.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form method="post" action="#">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>© 2025 Numonov Fatkhiddin. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
