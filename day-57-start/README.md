@@ -4,7 +4,7 @@
 
 Today, I dived deeper into **Flask** and explored the **Jinja Framework**, a powerful templating engine for Python web development. Jinja allows us to dynamically insert Python code directly into HTML files, enabling the creation of dynamic and interactive web pages. Some key concepts I learned include:
 
-- How to use Jinja's templating syntax (`{{ ... }}` and `{% ... %}`) to dynamically render content in HTML.
+- How to use Jinja's templating syntax (``{{ ... }}`` and ``{% ... %}``) to dynamically render content in HTML.
 - Utilizing Python data directly in HTML templates for better functionality and flexibility.
 
 ## 🖥️ What I Built Today
