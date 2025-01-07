@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 # Day 57 - Jinja Framework and Flask Blog Website
 
 ## 🌟 What I Learned Today
