@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Library</title>
+</head>
+<body>
+  <h1>My Library</h1>
+
+  {% if not all_books %}
+    <p>Library is empty.</p>
+  {% else %}
+    {% for book in all_books %}
+      <ul>
+        <li>
+          <a href="/delete?book_id={{ book['id']}}">Delete</a>
+           {{ book["title"] }} - {{ book["author"] }} - {{ book["rating"] }}/10
+          <!-- Pass the book_id as a query param -->
+          <a href="/edit?book_id={{ book['id'] }}">Edit Rating</a>
+        </li>
+      </ul>
+    {% endfor %}
+  {% endif %}
+
+  <a href="/add">Add New Book</a>
+</body>
+</html>
